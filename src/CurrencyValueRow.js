@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 
 export default function CurrencyValueRow(props) {
 	
+  //initialize input state
   const [input, setInput] = useState({
 	  currency: "",
 	  amount: ""
   }); 
 	
+  //handle input change
   function handleChange(e) {
 	  const value = e.target.value;
 	  setInput({

@@ -14,9 +14,10 @@ var requestOptions = {
 
 function App() {
 	
+  //set currencies state
   const [currencies, setCurrencies] = useState([]); 
-  const [exchange, setExchange] = useState([]); 
-	
+
+//fetch info
  useEffect(() => {
 	  fetch(BASE_URL + '/latest', requestOptions)
 	  	.then(response => response.json())
